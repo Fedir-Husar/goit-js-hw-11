@@ -1,6 +1,6 @@
-
+@import '~node_modules/modern-normalize/modern-normalize.css';
 body {
-  background-color: rgb(212, 189, 189);
+  background-color: rgb(235, 235, 235);
 }
 
 .input {
@@ -44,7 +44,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  color: rgb(234, 248, 248);
+  color: azure;
 }
 
 .btn-more.is-hidden {
@@ -52,10 +52,13 @@ body {
 }
 
 .search-form {
+  position: fixed;
   width: 100vw;
+  left: 0;
+  top: 0;
+  right: 0;
   background-color: rgba(23, 23, 26, 0.699);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
   text-align: center;
   height: auto;
 }
@@ -69,16 +72,15 @@ body {
 }
 
 .gallery__item {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
   min-width: 320px;
   border: 2px solid #f1eeee;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s;
   flex-basis: calc((100% - 10px) / 4);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 
 .photo-card {
@@ -89,8 +91,9 @@ body {
 
 .gallery__image {
   display: block;
-  height: 50vh;
-  object-fit: cover;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .info {
@@ -109,4 +112,4 @@ body {
 
 .gallery__item {
   text-decoration: none;
-}
+}/*# sourceMappingURL=index.css.map */
